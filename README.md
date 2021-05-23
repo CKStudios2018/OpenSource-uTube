@@ -2,7 +2,7 @@
 ## YouTube, but it's open source, and Google monetisation free
 
 
-### How it worçs:
+### How it works:
 
 - Upload your video to our site.
 - It gets compressed af, then stored on our servers.
