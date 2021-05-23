@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+div.body{
+    font-size: 15px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+div.footer {
+    font-size: 10px;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+}
