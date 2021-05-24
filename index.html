@@ -12,7 +12,6 @@
     <body dir="ltr" standardized-themed-scrollbar="">
         <p>Site is a re-Work In Progress</p>
         <utd-app scrollbar-rework="" standardized-themed-scrollbar="" scrollbar-color="" mini-guide-visible_="">
-            <!--css-build:shady-->
             <ut-activity-manager class="style-scope utd-app"></ut-activity-manager>
             <ut-guide-manager id="guide-manager" class="style-scope utd-app"></ut-guide-manager>
             <ut-gitfeedback-manager class="style-scope utd-app"></ut-gitfeedback-manager>
@@ -25,6 +24,15 @@
             <ut-visibility-monitor id="visibility-monitor" height-prescan="400" track-window-scroll="" class="style-scope utd-app"></ut-visibility-monitor>
             <!--at ByeMC's will, here is History Manager (I will not add)-->
             <!--<ut-history-manager id="historyManager" class="style-scope utd-app"></ut-history-manager>-->
+            <div id="content" class="style-scope utd-app">
+                <div id="masthead-container" class="style-scope utd-app">
+                    <utd-masthead id="masthead" logo-type="UTUBE_LOGO" slot="masthead" class="masthead-finish" is-logo-updated="" desktop-searchbar-style="default" role="banner" dark="">
+                        <iron-media-query query="max-width: 656px" class="style-scope ytd-masthead" style="display: none;"></iron-media-query>
+                        <div id="ticker" class="style-scope utd-masthead"></div>
+                        <div id="interexistential" class="style-scope utd-masthead"></div>
+                    </utd-masthead>
+                </div>
+            </div>
         </utd-app>
         <progress></progress>
     </body>
