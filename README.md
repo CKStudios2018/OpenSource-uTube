@@ -1,8 +1,8 @@
 # OpenSource-uTube
-## YouTube, but it's open source, and Google monetisation free
+### YouTube, but it's open source, and Google monetisation free
 
 
-### How it works:
+## How it works:
 
 - Upload your video to our site.
 - It gets compressed af, then stored on our servers.
@@ -11,3 +11,7 @@
 
 
 If you want to fork this repo, feel free, it's Open Source for a reason
+
+## Check out some other cool versions of OpenSource uTube:
+### Anyone who makes a fork can change or remove this section at will
+· [ByeMC's Fork](https://github.com/ByeMC/OpenSource-uTube/)
