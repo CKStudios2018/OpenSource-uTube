@@ -108,36 +108,36 @@ var newPolymer=function(config){
         <meta name="description" content="Enjoy videos and music, upload original content and share it with friends, all without Google's Monetisation on uTube. Even better, it's OpenSource!">
         <meta name="keywords" content="video, free, upload. uTube">
         <script nonce="vCqiwJhIhgOPERBR+Zfv0w">
-        var ytcsi={
+        var utcsi={
             gt:function(n){n=(n||"")+"data_";
-            return ytcsi[n]||(ytcsi[n]={tick:{},info:{}
+            return utcsi[n]||(utcsi[n]={tick:{},info:{}
         })
     },now:window.performance&&window.performance.timing&&window.performance.now&&window.performance.timing.navigationStart?function(){
         return window.performance.timing.navigationStart+window.performance.now()
     }:function(){
         return(new Date).getTime()},tick:function(l,t,n){
-            var ticks=ytcsi.gt(n).tick;
-            var v=t||ytcsi.now();
+            var ticks=utcsi.gt(n).tick;
+            var v=t||utcsi.now();
             if(ticks[l]){ticks["_"+l]=ticks["_"+l]||[ticks[l]];
             ticks["_"+l].push(v)}ticks[l]=v},info:function(k,v,n){
-                ytcsi.gt(n).info[k]=v
+                utcsi.gt(n).info[k]=v
             },setStart:function(s,t,n){
-                ytcsi.info("yt_sts",s,n);
-                ytcsi.tick("_start",t,n)
+                utcsi.info("ut_sts",s,n);
+                utcsi.tick("_start",t,n)
             }
         };
             (function(w,d){
-                ytcsi.setStart("dhs",w.performance?w.performance.timing.responseStart:null);
+                utcsi.setStart("dhs",w.performance?w.performance.timing.responseStart:null);
                 var isPrerender=(d.visibilityState||d.webkitVisibilityState)=="prerender";
                 var vName=!d.visibilityState&&d.webkitVisibilityState?"webkitvisibilitychange":"visibilitychange";
-                if(isPrerender){ytcsi.info("prerender",1);
+                if(isPrerender){utcsi.info("prerender",1);
                 var startTick=function(){
-                    ytcsi.setStart("dhs");
+                    utcsi.setStart("dhs");
                     d.removeEventListener(vName,startTick)
                 };
                 d.addEventListener(vName,startTick,false)
             }if(d.addEventListener)d.addEventListener(vName,function(){
-                ytcsi.tick("vc")
+                utcsi.tick("vc")
             },false);
             function isGecko(){
                 if(!w.navigator)return false;
@@ -156,15 +156,15 @@ var newPolymer=function(config){
             0&&ua.indexOf("Trident")<0&&ua.indexOf("MSIE")<0
         }if(isGecko()){
             var isHidden=(d.visibilityState||d.webkitVisibilityState)=="hidden";
-            if(isHidden)ytcsi.tick("vc")
+            if(isHidden)utcsi.tick("vc")
         }var slt=function(el,t){
             setTimeout(function(){
-                var n=ytcsi.now();
+                var n=utcsi.now();
                 el.loadTime=n;
                 if(el.slt)el.slt()
             },t)
         };
-        w.__ytRIL=function(el){
+        w.__utRIL=function(el){
             if(!el.getAttribute("data-thumb"))if(w.requestAnimationFrame)w.requestAnimationFrame(function(){slt(el,0)
             });
             else slt(el,16)
