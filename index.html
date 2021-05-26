@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" lang="en-US" typography="" typography-spacing="" standardized-themed-scrollbar="" dark="true">
     <head>
-        <script data-original-src="/s/player/8523e85c/player_ias/en_US/miniplayer.js" nonce="KyGgmUKtNI67ywmWrxG4sA" src="/s/player/8523e85c/player_ias/en_US/miniplayer.js"></script>
-        <script data-original-src="/s/player/8523e85c/player_ias/en_US/remote.js" nonce="KyGgmUKtNI67ywmWrxG4sA" src="/s/player/8523e85c/player_ias/en_US/remote.js"></script>
+        <script data-original-src="/s/player/8523e85c/player_ias.vsflet/en_US/miniplayer.js" nonce="KyGgmUKtNI67ywmWrxG4sA" src="/s/player/8523e85c/player_ias.vsflet/en_US/miniplayer.js"></script>
+        <script data-original-src="/s/player/8523e85c/player_ias.vsflet/en_US/remote.js" nonce="KyGgmUKtNI67ywmWrxG4sA" src="/s/player/8523e85c/player_ias.vsflet/en_US/remote.js"></script>
         <script nonce="KyGgmUKtNI67ywmWrxG4sA">
         var utcfg={d:function(){
             return window.ut&&ut.config_||utcfg.data_||(utcfg.data_={})
@@ -14,6 +14,91 @@
         else for(var k in a[0])utcfg.d()[k]=a[0][k]}};
             window.utcfg.set('EMERGENCY_BASE_URL', '\/error_204?t\x3djserror\x26level\x3dERROR\x26client.name\x3d1\x26client.version\x3d2.20210523.07.00');
         </script>
+        <script nonce="vCqiwJhIhgOPERBR+Zfv0w">(function(){
+            window.uterr=window.uterr||true;
+            window.unhandledErrorMessages={};
+            window.unhandledErrorCount=0;
+            window.onerror=function(msg,url,line,columnNumber,error){
+                var err;
+                if(error)err=error;
+                else{
+                    err=new Error;err.stack="";
+                    err.message=msg;err.fileName=url;
+                    err.lineNumber=line;
+                    if(!isNaN(columnNumber))err["columnNumber"]=columnNumber
+                }var message=String(err.message);
+                if(!err.message||message in window.unhandledErrorMessages||window.unhandledErrorCount>=5)return;
+                window.unhandledErrorCount+=1;
+                window.unhandledErrorMessages[message]=true;
+                var img=new Image;
+                window.emergencyTimeoutImg=img;img.onload=img.onerror=function(){
+                    delete window.emergencyTimeoutImg
+                };
+            var combinedLineAndColumn=err.lineNumber;if(!isNaN(err["columnNumber"]))combinedLineAndColumn+=":"+err["columnNumber"];
+            var stack=err.stack||"";
+            var values={"msg":message,"type":err.name,"client.params":"unhandled window error","file":err.fileName,"line":combinedLineAndColumn,"stack":stack.substr(0,500)};
+            var thirdPartyScript=!err.fileName||err.fileName==="<anonymous>"||stack.indexOf("extension://")>=0;
+                var replaced=stack.replace(/https:\/\/www.ckstudios2018.github.io\//g,"");
+                if(replaced.match(/https?:\/\/[^/]+\//))thirdPartyScript=
+            true;
+            else if(stack.indexOf("trapProp")>=0&&stack.indexOf("trapChain")>=0)thirdPartyScript=true;
+            else if(message.indexOf("redefine non-configurable")>=0&&message.indexOf("userAgent")>=0)thirdPartyScript=true;
+            var baseUrl=window["utcfg"].get("EMERGENCY_BASE_URL","https://www.ckstudios2018.github.io/error-204");
+            var unsupported=message.indexOf("window.customElements is undefined")>=0;
+            if(thirdPartyScript||unsupported)baseUrl=baseUrl.replace("level=ERROR","level=WARNING");
+            var parts=[baseUrl];
+            for(var key in values){var value=
+            values[key];
+            if(value)parts.push(key+"="+encodeURIComponent(value))}img.src=parts.join("&")};
+            (function(){function _getExtendedNativePrototype(tag){var p=this._nativePrototypes[tag];
+                if(!p){p=Object.create(this.getNativePrototype(tag));
+                    var p$=Object.getOwnPropertyNames(window["Polymer"].Base);
+                    for(var i=0,n=undefined;
+                    i<p$.length&&(n=p$[i]);
+                    i++)if(!window["Polymer"].BaseDescriptors[n])try{p[n]=window["Polymer"].Base[n]
+                }catch(e){
+                    throw new Error("Error while copying property: "+n+". Tag is "+tag);
+                }try{
+                    Object.defineProperties(p,window["Polymer"].BaseDescriptors)
+                }catch(e$0){
+                    throw new Error("Polymer define property failed for "+
+            Object.keys(p));
+        }this._nativePrototypes[tag]=p
+    }return p
+}function handlePolymerError(msg){window.onerror(msg,window.location.href,0,0,new Error(Array.prototype.join.call(arguments,",")))
+}var origPolymer=window["Polymer"];
+var newPolymer=function(config){
+    if(!origPolymer._utIntercepted&&window["Polymer"].Base){
+        origPolymer._utIntercepted=true;
+        window["Polymer"].Base._getExtendedNativePrototype=_getExtendedNativePrototype;
+        window["Polymer"].Base._error=handlePolymerError;
+        window["Polymer"].Base._warn=handlePolymerError
+    }return origPolymer.apply(this,
+            arguments)};
+            var origDescriptor=Object.getOwnPropertyDescriptor(window,"Polymer");
+            Object.defineProperty(window,"Polymer",{set:function(p){
+                if(origDescriptor&&origDescriptor.set&&origDescriptor.get){
+                    origDescriptor.set(p);
+                    origPolymer=origDescriptor.get()
+                }else origPolymer=p;
+                if(typeof origPolymer==="function")Object.defineProperty(window,"Polymer",{
+                    value:origPolymer,configurable:true,enumerable:true,writable:true
+                })
+            },get:function(){
+                return typeof origPolymer==="function"?newPolymer:origPolymer
+            },configurable:true,
+            enumerable:true
+        })
+    })();
+}).call(this);
+            </script>
+            <script nonce="vCqiwJhIhgOPERBR+Zfv0w">
+            window.Polymer=window.Polymer||{};
+            window.Polymer.legacyOptimizations=true;
+            window.Polymer.setPassiveTouchGestures=true;
+            window.ShadyDOM={force:true,preferPerformance:true,noPatch:true};
+            window.ShadyCSS = {disableRuntime: true};
+            </script>
         <link rel="icon" href="https://imgur.com/a/IQHkZ7d/">
         <title>OpenSource uTube</title>
         <link rel="canonical" href="https://ckstudios.github.io/OpenSource-uTube/">
