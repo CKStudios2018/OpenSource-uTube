@@ -14,4 +14,5 @@ If you want to fork this repo, feel free, it's Open Source for a reason
 
 ## Check out some other cool versions of OpenSource uTube:
 ### Anyone who makes a fork can change or remove this section at will
-· [ByeMC's Fork](https://github.com/ByeMC/OpenSource-uTube/)
+- [ByeMC's Fork](https://github.com/ByeMC/OpenSource-uTube/)
+- [Redir110's Fork](https://github.com/redir110/OpenSource-uTube/)
