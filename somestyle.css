@@ -1,3 +1,38 @@
 body{
-    background-color: aquamarine;
+    background: #36393e;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.page{
+    width: 1190px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.center{
+    position: relative;
+    z-index: 1;
+    background: #23272A;
+    max-width: 779px;
+    margin: 0 auto 100px;
+    padding: 45px;
+}
+
+.center button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #7289DA;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.center button:hover,.center button:active{
+    background: #99AAB5;
 }
