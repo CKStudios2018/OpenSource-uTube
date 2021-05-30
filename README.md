@@ -11,6 +11,7 @@
 
 
 If you want to fork this repo, feel free, it's Open Source for a reason
+_See also:_ [Wiki](https://github.com/CKStudios2018/OpenSource-uTube/wiki) _(has Docs on how to fork correctly)_
 
 ## Check out some other cool versions of OpenSource uTube:
 ### Anyone who makes a fork can change or remove this section at will
