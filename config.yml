@@ -1,0 +1,3 @@
+baseurl: '/OpenSource-uTube'
+# Usually the name of the GH repo, unless deploying onto a custom URL
+# leave blank if on root, otherwise use '/repo-name'
