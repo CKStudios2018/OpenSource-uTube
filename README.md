@@ -16,4 +16,4 @@ If you want to fork this repo, feel free, it's Open Source for a reason
 ### Anyone who makes a fork can change or remove this section at will
 - [ByeMC's Fork](https://github.com/ByeMC/OpenSource-uTube/)
 - [Redir110's Fork](https://github.com/redir110/OpenSource-uTube/)
-- an [upcoming fork](https://systemware.ga/OSuT/news/new-forks)
+- show [your fork](https://github.com/CKStudios2018/OpenSource-uTube/discussions/7)
