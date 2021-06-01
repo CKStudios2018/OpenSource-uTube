@@ -9,7 +9,8 @@
         <script data-original-src="/OpenSource-uTube/s/player/8523e85c/player_ias.vsflet/en_US/miniplayer.js" nonce="KyGgmUKtNI67ywmWrxG4sA" src="/OpenSource-uTube/s/player/8523e85c/player_ias.vsflet/en_US/miniplayer.js"></script>
         <script data-original-src="/OpenSource-uTube/s/player/8523e85c/player_ias.vsflet/en_US/remote.js" nonce="KyGgmUKtNI67ywmWrxG4sA" src="/OpenSource-uTube/s/player/8523e85c/player_ias.vsflet/en_US/remote.js"></script>
         <script nonce="KyGgmUKtNI67ywmWrxG4sA">
-        var utcfg={d:function(){
+        var utcfg={
+          d:function(){
             return window.ut&&ut.config_||utcfg.data_||(utcfg.data_={})
         },get:function(k,o){
             return k in utcfg.d()?utcfg.d()[k]:o
@@ -19,7 +20,8 @@
         else for(var k in a[0])utcfg.d()[k]=a[0][k]}};
             window.utcfg.set('EMERGENCY_BASE_URL', '\/error_204?t\x3djserror\x26level\x3dERROR\x26client.name\x3d1\x26client.version\x3d2.20210523.07.00');
         </script>
-        <script nonce="vCqiwJhIhgOPERBR+Zfv0w">(function(){
+        <script nonce="vCqiwJhIhgOPERBR+Zfv0w">
+        (function(){
             window.uterr=window.uterr||true;
             window.unhandledErrorMessages={};
             window.unhandledErrorCount=0;
@@ -44,8 +46,7 @@
             var values={"msg":message,"type":err.name,"client.params":"unhandled window error","file":err.fileName,"line":combinedLineAndColumn,"stack":stack.substr(0,500)};
             var thirdPartyScript=!err.fileName||err.fileName==="<anonymous>"||stack.indexOf("extension://")>=0;
                 var replaced=stack.replace(/https:\/\/www.ckstudios2018.github.io\//g,"");
-                if(replaced.match(/https?:\/\/[^/]+\//))thirdPartyScript=
-            true;
+                if(replaced.match(/https?:\/\/[^/]+\//))thirdPartyScript=true;
             else if(stack.indexOf("trapProp")>=0&&stack.indexOf("trapChain")>=0)thirdPartyScript=true;
             else if(message.indexOf("redefine non-configurable")>=0&&message.indexOf("userAgent")>=0)thirdPartyScript=true;
             var baseUrl=window["utcfg"].get("EMERGENCY_BASE_URL","https://www.ckstudios2018.github.io/error-204");
