@@ -5,7 +5,7 @@
 ## How it works:
 
 - Upload your video to our site.
-- It gets compressed af, then stored on a VPS (Virtual Private Server, aka a 'Cloud').
+- It gets compressed af, then stored on a VPS (Virtual Private Server, aka the 'Cloud').
 - Whenever someone wants to watch that video, it gets decompressed live, so as you watch it, it comes clear. (this may cause issues, such as excessive buffering, but [V1RU5](https://github.com/jodri-code) couldn't figure any other way)
 - Anyone who know how to fix pls do
 
