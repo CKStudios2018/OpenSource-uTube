@@ -1,13 +1,14 @@
 # OpenSource-uTube
-### YouTube, but it's open source, and Google monetisation free
+### YouTube, but it's open source, and completely monetisation free
 
 
 ## How it works:
 
 - Upload your video to our site.
-- It gets compressed af, then stored on a VPS (Virtual Private Server, aka the 'Cloud').
-- Whenever someone wants to watch that video, it gets decompressed live, so as you watch it, it comes clear. (this may cause issues, such as excessive buffering, but [V1RU5](https://github.com/jodri-code) couldn't figure any other way)
-- Anyone who know how to fix pls do
+- It gets compressed af, then stored on a 'Cloud'.
+- Whenever someone wants to watch that video, it gets decompressed live, so as you watch it, it comes clear.
+(this may cause issues, such as excessive buffering, but [V1RU5](https://github.com/jodri-code) couldn't figure any other way)
+- Anyone who know how to fix pls help
 
 
 If you want to fork this repo, feel free, it's Open Source for a reason
