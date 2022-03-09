@@ -173,5 +173,3 @@
     Object.defineProperties(Y.prototype,{nativeShadow:{get:function(){return N}},nativeCss:{get:function(){return P}}});var Z=new Y,ve,we;window.ShadyCSS&&(ve=window.ShadyCSS.ApplyShim,we=window.ShadyCSS.CustomStyleInterface);
     window.ShadyCSS={ScopingShim:Z,prepareTemplate:function(a,b,c){Z.flushCustomStyles();Z.prepareTemplate(a,b,c)},prepareTemplateDom:function(a,b){Z.prepareTemplateDom(a,b)},prepareTemplateStyles:function(a,b,c){Z.flushCustomStyles();Z.prepareTemplateStyles(a,b,c)},styleSubtree:function(a,b){Z.flushCustomStyles();Z.styleSubtree(a,b)},styleElement:function(a){Z.flushCustomStyles();Z.styleElement(a)},styleDocument:function(a){Z.flushCustomStyles();Z.styleDocument(a)},flushCustomStyles:function(){Z.flushCustomStyles()},
     getComputedStyleValue:function(a,b){return Z.getComputedStyleValue(a,b)},nativeCss:P,nativeShadow:N,cssBuild:ed,disableRuntime:O};ve&&(window.ShadyCSS.ApplyShim=ve);we&&(window.ShadyCSS.CustomStyleInterface=we);})();
-    //# sourceMappingURL=blaze-out/k8-opt/bin/third_party/javascript/polymer/v2/webcomponentsjs/webcomponents-sd.js.sourcemap
-    
