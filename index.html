@@ -6,29 +6,27 @@
 <!DOCTYPE html>
 <html style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" lang="en" typography="" typography-spacing="" standardized-themed-scrollbar="" dark="true" data-arp-injected="true">
 <head>
-    <script data-original-src="miniplayer.js" src="miniplayer.js"></script>
-    <script data-original-src="remote.js" src="remote.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script data-original-src="miniplayer.js" src="miniplayer.js"></script>
+  <script data-original-src="remote.js" src="remote.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
   <script>
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyA7WMeyqjkkcwDaL2KtNjsfQvHPgm2sWLA",
-    authDomain: "bugfreechat-600c4.firebaseapp.com",
-    projectId: "bugfreechat-600c4",
-    storageBucket: "bugfreechat-600c4.appspot.com",
-    messagingSenderId: "1022793471622",
-    appId: "1:1022793471622:web:6b1204419148dd4e426307"
+      authDomain: "bugfreechat-600c4.firebaseapp.com",
+      projectId: "bugfreechat-600c4",
+      storageBucket: "bugfreechat-600c4.appspot.com",
+      messagingSenderId: "1022793471622",
+      appId: "1:1022793471622:web:6b1204419148dd4e426307"
     };
     firebase.initializeApp(config);
-  </script>
-  <script>
-    const loginButton = document.getElementById('login-form');
-    const html = ``
-    if(localStorage.logged.value() === 'true' ){
-      loginButton.innerHTML === html
-    }else{
-      return;
-    }
+
+    const auth = firebase.auth();
+    const store = firebase.firestore();
+
+    store.settings({ timestampsInSnapshots: true });
   </script>
     <script >
     var utcfg={
@@ -102,14 +100,19 @@ var newPolymer=function(config){
     <script >window.Polymer=window.Polymer||{};window.Polymer.legacyOptimizations=true;window.Polymer.setPassiveTouchGestures=true;window.ShadyDOM={force:true,preferPerformance:true,noPatch:true};
     window.ShadyCSS = {disableRuntime: true};</script>
         <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
-        <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.png">
+        <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/png">
+        <meta property="og:locale" content="en">
+        <meta property="og:site_name" content="uTube">
+        <meta property="og:title" content="uTube">
+        <meta property="og:image" content="https://tallerthanshort.github.io/ut3.ggpht/icons/utube.png">
+        <meta property="og:description" content="Hello. I'm Infi.">
         <title>OpenSource uTube</title>
         <link rel="canonical" href="https://ckstudios2018.github.io/OpenSource-uTube/">
         <link rel="alternate" media="handheld" href="https://ckstudios.github.io/m-OpenSource-uTube/">
         <link rel="publisher" href="https://discord.gg/fArH9rD">
         <meta name="description" content="Enjoy videos and music, upload original content and share it with friends, all without Google's Monetisation on uTube. Even better, it's OpenSource!">
         <meta name="keywords" content="video, free, upload. uTube">
-    <script >
+    <script>
     var utcsi={
         gt:function(n){n=(n||"")+"data_";
         return utcsi[n]||(utcsi[n]={tick:{},info:{}
@@ -170,7 +173,7 @@ var newPolymer=function(config){
             }
     </script>
     <link rel="stylesheet" href="www-main-desktop-home-page-skeleton.css" >
-    <link rel="stylesheet" href="1f277c2a/cssbin/www-onepick.css" >
+    <link rel="stylesheet" href="www-onepick.css" >
     <style class="global_styles" >
         body{
             background: #36393e;
@@ -68818,7 +68821,9 @@ var newPolymer=function(config){
             background: yellow !important;
             color: black !important;
         }
-    }</style></head><body dir="ltr" standardized-themed-scrollbar=""><script >if (window.utcsi) {window.utcsi.tick('bs', null, '');}</script><script >utcfg.set('initialBodyClientWidth', document.body.clientWidth);</script><script >if (window.utcsi) {window.utcsi.tick('ai', null, '');}</script><iframe name="passive_signin" src="https://accounts.google.com/ServiceLogin?service=utube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.osutube.nl%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&amp;hl=en" style="display: none"></iframe><utd-app scrollbar-rework="" standardized-themed-scrollbar="" scrollbar-color=""><ut-activity-manager class="style-scope utd-app"></ut-activity-manager>
+    }
+    </style>
+    </head><body dir="ltr" standardized-themed-scrollbar=""><script >if (window.utcsi) {window.utcsi.tick('bs', null, '');}</script><script >utcfg.set('initialBodyClientWidth', document.body.clientWidth);</script><script >if (window.utcsi) {window.utcsi.tick('ai', null, '');}</script><iframe name="passive_signin" src="https://osutube.nl/login" style="display: none"></iframe><utd-app scrollbar-rework="" standardized-themed-scrollbar="" scrollbar-color=""><ut-activity-manager class="style-scope utd-app"></ut-activity-manager>
     <ut-guide-manager id="guide-service" class="style-scope utd-app">
     </ut-guide-manager>
     <ut-gfeedback-manager class="style-scope utd-app"></ut-gfeedback-manager>
@@ -68949,6 +68954,7 @@ var newPolymer=function(config){
     <div class="stroke style-scope ut-interaction"></div><div class="fill style-scope ut-interaction"></div></ut-interaction></ut-icon-button></a></div>
     </utd-topbar-menu-button-renderer>
     <!-- rework login form here rework log in form here -->
+    <script src="auth.js"></script>
     <div id="login-form"></div>
     <utd-button-renderer class="style-scope utd-masthead style-suggestive size-small" use-keyboard-focused="" button-renderer="true" is-paper-button-with-icon="" is-paper-button="">
     <a class="utd-popup-container style-scope utd-button-renderer" tabindex="-1" href="https://ckstudios2018.github.io/OpenSource-uTube/login">
