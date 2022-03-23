@@ -3,9 +3,12 @@
 <head>
   <title>uTube Login | CKS.GOV</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="loginstyle.css" />
 </head>
 <body>
+  <div class="logo">
+    <img src="https://tallerthanshort.github.io/ut3.ggpht/icons/utube.png" style="height: 30px; width: 30px;">
+  </div>
 
   <div id="login_div" class="main-div">
     <h3 style="color: aliceblue;">uTube Login</h3>
@@ -16,9 +19,9 @@
   </div>
 
   <div id="user_div" class="loggedin-div">
-    <h3 style="color: aliceblue;">Welcome User</h3>
-    <p style="color: aliceblue;" id="user_para">temp</p>
-    <a href="https://ckstudios2018.github.io/OpenSource-uTube">Welcome to uTube. You're currently logged in. Click here to continue</a>
+    <h3 style="color: palegoldenrod;">Welcome!</h3>
+    <p style="color: palegreen;" id="user_para">temp</p>
+    <a href="/" style="color: #5d8ffc;">Welcome to uTube. Click here to continue</a>
     <button onclick="logout()">Logout</button>
   </div>
 
@@ -38,8 +41,11 @@
     appId: "1:1022793471622:web:6b1204419148dd4e426307"
     };
     firebase.initializeApp(config);
+    const auth = firebase.auth();
+    const store = firebase.firestore();
+    store.settings({ timestampsInSnapshots: true });
   </script>
-  <script src="index.js"></script>
+  <script src="logindex.js"></script>
 
 </body>
 </html>

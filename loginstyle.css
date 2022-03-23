@@ -11,6 +11,11 @@ body {
     font-weight: 700;
   }
   
+  .logo {
+    margin: 0px auto;
+    margin-top: 15px;
+    padding: 35px;
+  }
   .main-div, .loggedin-div {
     width: 20%;
     margin: 0px auto;

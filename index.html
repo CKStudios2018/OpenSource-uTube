@@ -11,6 +11,8 @@
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script src="auth.js"></script>
+
   <script>
     // Initialize Firebase
     var config = {
@@ -99,13 +101,13 @@ var newPolymer=function(config){
     </script>      
     <script >window.Polymer=window.Polymer||{};window.Polymer.legacyOptimizations=true;window.Polymer.setPassiveTouchGestures=true;window.ShadyDOM={force:true,preferPerformance:true,noPatch:true};
     window.ShadyCSS = {disableRuntime: true};</script>
-        <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
-        <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/png">
+        <link rel="shortcut icon" href="https://tallerthanshort.github.io/ut3.ggpht/icons/utube.png" type="image/x-icon">
+        <link rel="icon" href="https://tallerthanshort.github.io/ut3.ggpht/icons/utube.png" type="image/png">
         <meta property="og:locale" content="en">
         <meta property="og:site_name" content="uTube">
         <meta property="og:title" content="uTube">
         <meta property="og:image" content="https://tallerthanshort.github.io/ut3.ggpht/icons/utube.png">
-        <meta property="og:description" content="Hello. I'm Infi.">
+        <meta property="og:description" content="Enjoy videos and music, upload original content and share it with friends, all without Google's Monetisation on OpenSource uTube.">
         <title>OpenSource uTube</title>
         <link rel="canonical" href="https://ckstudios2018.github.io/OpenSource-uTube/">
         <link rel="alternate" media="handheld" href="https://ckstudios.github.io/m-OpenSource-uTube/">
@@ -136,7 +138,7 @@ var newPolymer=function(config){
     false);function isGecko(){if(!w.navigator)return false;try{if(w.navigator.userAgentData&&w.navigator.userAgentData.brands&&w.navigator.userAgentData.brands.length){var brands=w.navigator.userAgentData.brands;for(var i=0;i<brands.length;i++)if(brands[i]&&brands[i].brand==="Firefox")return true;return false}}catch(e){setTimeout(function(){throw e;})}if(!w.navigator.userAgent)return false;var ua=w.navigator.userAgent;return ua.indexOf("Gecko")>0&&ua.toLowerCase().indexOf("webkit")<0&&ua.indexOf("Edge")<
     0&&ua.indexOf("Trident")<0&&ua.indexOf("MSIE")<0}if(isGecko()){var isHidden=(d.visibilityState||d.webkitVisibilityState)=="hidden";if(isHidden)utcsi.tick("vc")}var slt=function(el,t){setTimeout(function(){var n=utcsi.now();el.loadTime=n;if(el.slt)el.slt()},t)};w.__utRIL=function(el){if(!el.getAttribute("data-thumb"))if(w.requestAnimationFrame)w.requestAnimationFrame(function(){slt(el,0)});else slt(el,16)}})(window,document);
     </script>
-    <link rel="preload" href="{{ site.baseurl }}/assets/img/favicon.png" as="fetch">
+    <link rel="preload" href="https://tallerthanshort.github.io/ut3.ggpht/icons/utube.png" as="fetch">
     <link as="script" rel="preload" href="desktop_polymer.js" >
     </script>
     <script src="custom-elements-es5-adapter.js" ></script>
@@ -68823,7 +68825,9 @@ var newPolymer=function(config){
         }
     }
     </style>
-    </head><body dir="ltr" standardized-themed-scrollbar=""><script >if (window.utcsi) {window.utcsi.tick('bs', null, '');}</script><script >utcfg.set('initialBodyClientWidth', document.body.clientWidth);</script><script >if (window.utcsi) {window.utcsi.tick('ai', null, '');}</script><iframe name="passive_signin" src="https://osutube.nl/login" style="display: none"></iframe><utd-app scrollbar-rework="" standardized-themed-scrollbar="" scrollbar-color=""><ut-activity-manager class="style-scope utd-app"></ut-activity-manager>
+</head>
+  <body dir="ltr" standardized-themed-scrollbar="">
+    <script >if (window.utcsi) {window.utcsi.tick('bs', null, '');}</script><script >utcfg.set('initialBodyClientWidth', document.body.clientWidth);</script><script >if (window.utcsi) {window.utcsi.tick('ai', null, '');}</script><iframe name="passive_signin" src="https://osutube.nl/login" style="display: none"></iframe><utd-app scrollbar-rework="" standardized-themed-scrollbar="" scrollbar-color=""><ut-activity-manager class="style-scope utd-app"></ut-activity-manager>
     <ut-guide-manager id="guide-service" class="style-scope utd-app">
     </ut-guide-manager>
     <ut-gfeedback-manager class="style-scope utd-app"></ut-gfeedback-manager>
@@ -68954,21 +68958,22 @@ var newPolymer=function(config){
     <div class="stroke style-scope ut-interaction"></div><div class="fill style-scope ut-interaction"></div></ut-interaction></ut-icon-button></a></div>
     </utd-topbar-menu-button-renderer>
     <!-- rework login form here rework log in form here -->
-    <script src="auth.js"></script>
-    <div id="login-form"></div>
-    <utd-button-renderer class="style-scope utd-masthead style-suggestive size-small" use-keyboard-focused="" button-renderer="true" is-paper-button-with-icon="" is-paper-button="">
-    <a class="utd-popup-container style-scope utd-button-renderer" tabindex="-1" href="https://ckstudios2018.github.io/OpenSource-uTube/login">
-    <tp-ut-paper-button id="button" class="style-scope utd-button-renderer style-suggestive size-small" role="button" tabindex="0" animated="" elevation="0" aria-disabled="false" aria-label="Log in">
-    <ut-icon class="style-scope utd-button-renderer">
-      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope ut-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+    <div id="login-icons">
+      <utd-button-renderer class="style-scope utd-masthead style-suggestive size-small" use-keyboard-focused="" button-renderer="true" is-paper-button-with-icon="" is-paper-button="">
+      <a onclick="loginFunction()" class="utd-popup-container style-scope utd-button-renderer login-form" tabindex="-1" href="#">
+        <tp-ut-paper-button id="button" class="style-scope utd-button-renderer style-suggestive size-small" role="button" tabindex="0" animated="" elevation="0" aria-disabled="false" aria-label="Log in">
+      <ut-icon class="style-scope utd-button-renderer">
+      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="true" class="style-scope ut-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
         <g class="style-scope ut-icon">
-          <path d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z" class="style-scope ut-icon"></path>
+          <path d="M12,0 C18.62377,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z" class="style-scope ut-icon"></path>
         </g>
       </svg>
     </ut-icon>
     <ut-formatted-string id="text" class="style-scope utd-button-renderer style-suggestive size-small">Log in</ut-formatted-string>
-    </tp-ut-paper-button></a>
-    </utd-button-renderer>
+    </tp-ut-paper-button>  
+      </a>
+    </utd-button-renderer>  
+    </div>
     </div>
       </div>
     </div>

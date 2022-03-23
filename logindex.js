@@ -1,7 +1,9 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-  
+      store.collection('c').get().then(snapshot => {
+        profile(snapshot, snapshot.docs, user);
+      })
       document.getElementById("user_div").style.display = "block";
       document.getElementById("login_div").style.display = "none";
   
@@ -11,7 +13,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   
         var email_id = user.email;
         document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-        localStorage.setItem("logged", "true")
   
       }
   
@@ -34,7 +35,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       var errorCode = error.code;
       var errorMessage = error.message;
   
-      window.alert("Error : " + errorMessage + ". " + errorCode);
+      window.alert("Error: " + errorMessage + ". " + "Error code: " + errorCode);
     });
   
   }
