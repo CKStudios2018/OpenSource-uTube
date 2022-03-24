@@ -1,9 +1,6 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      store.collection('c').get().then(snapshot => {
-        profile(snapshot, snapshot.docs, user);
-      })
       document.getElementById("user_div").style.display = "block";
       document.getElementById("login_div").style.display = "none";
   
