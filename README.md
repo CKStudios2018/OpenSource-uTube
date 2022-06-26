@@ -1,6 +1,7 @@
 # OpenSource-uTube
-### YouTube, but it's open source, and completely monetisation free
 
+
+> YouTube, but it's open source, and completely Google **Monetisation** free
 
 ## How it works:
 
@@ -11,8 +12,12 @@
 - Anyone who know how to fix pls help
 
 
-If you want to fork this repo, feel free, it's Open Source for a reason
+If you want to fork this repo, feel free, it's Open Source for a reason.
 _See also:_ [Wiki](https://github.com/CKStudios2018/OpenSource-uTube/wiki) _(has Docs on how to fork correctly)_
+
+# Official Instances
+- [this instance](https://ckstudios2018.github.io/OpenSource-uTube)
+- [Common-Codes](https://github.com/Common-Codes) continuation [instance](https://Common-Codes.github.io/OpenSource-uTube)
 
 ## Check out some other cool versions of OpenSource uTube:
 ### Anyone who makes a fork can change or remove this section at will
